@@ -1,6 +1,8 @@
 import '../libs/materialize/global';
 import '../libs/materialize/velocity';
+import '../libs/materialize/jquery.easing.1.3';
 import '../libs/materialize/scrollspy';
+import '../libs/materialize/tabs';
 
 export default {
     /**
@@ -12,6 +14,8 @@ export default {
     },
 
     headerFunctions () {
-        $('.scrollspy').scrollSpy();
+        $('.scrollspy').scrollSpy({
+            scrollOffset: 0
+        });
     }
 };
