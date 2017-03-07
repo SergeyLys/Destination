@@ -36,39 +36,74 @@ $reveal-zindex: 1005 !default;
 
 /// Background color of modal overlays.
 /// @type Color
-$reveal-overlay-background: rgba($black, 0.45) !default;
+$reveal-overlay-background: rgba(36, 35, 47, 0.8) !default;
 
 /// Adds styles for a modal overlay.
 /// @param {Color} $background [$reveal-overlay-background] - Background color of the overlay.
 @mixin reveal-overlay($background: $reveal-overlay-background) {
+  display: none;
   position: fixed;
   top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
+  right: 0;
   z-index: $reveal-zindex;
-
-  display: none;
-  background-color: $background;
+  background-color: #fff;
   overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    position: fixed;
+    z-index: 10;
+  }
+
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    position: fixed;
+    z-index: 10;
+  }
+
+  @include breakpoint(medium) {
+    background-color: $background;
+  }
 }
 
 /// Adds base styles for a modal.
 @mixin reveal-modal-base {
   @include disable-mouse-outline;
-  z-index: $reveal-zindex + 1;
-  // Workaround android browser z-index bug
-  backface-visibility: hidden;
-
   display: none;
-  padding: $reveal-padding;
-
-  border: $reveal-border;
-  border-radius: $reveal-radius;
+  z-index: $reveal-zindex + 1;
+  padding: 40px 1rem;
   background-color: $reveal-background;
+  border-radius: $reveal-radius;
+  outline: none !important;
+  //top: 0 !important;
+  justify-content: center;
+  //overflow: auto;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //position: absolute;
+    //top: 50% !important;
+    //left: 50%;
+    //overflow: hidden;
+    //transform: translateX(-50%) translateY(-50%);
+  }
 
   @include breakpoint(medium) {
+    padding: $reveal-padding;
+    align-items: center;
     min-height: 0;
+    overflow: initial;
+  }
+
+  @include breakpoint(large) {
+    padding: 65px 100px;
   }
 
   // Make sure rows don't have a min-width on them
@@ -99,32 +134,90 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
 
 /// Creates a full-screen modal, which stretches the full width and height of the window.
 @mixin reveal-modal-fullscreen {
+  // scss-lint:disable DuplicateProperty
   top: 0;
   left: 0;
-
   width: 100%;
+  //height: 100%;
+  //height: 100vh;
+  min-height: 100%;
   max-width: none;
-  height: 100%;
-  height: 100vh; // sass-lint:disable-line no-duplicate-properties
-  min-height: 100vh;
   margin-left: 0;
-
   border: 0;
   border-radius: 0;
+
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    //min-height: 100vh;
+    z-index: 10;
+    overflow: auto;
+  }
+
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    //min-height: 100vh;
+    z-index: 10;
+    overflow: auto;
+  }
+
 }
 
 @mixin foundation-reveal {
   // [TODO] Is this necessary?
-  body.is-reveal-open { // sass-lint:disable-line no-qualifying-elements
+  // scss-lint:disable QualifyingElement
+  body.is-reveal-open {
     overflow: hidden;
-  }
 
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      overflow: visible;
+    }
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      overflow: visible;
+    }
+  }
   // html gets this class only in iOS
   html.is-reveal-open,
   html.is-reveal-open body {
     min-height: 100%;
     overflow: hidden;
     user-select: none;
+
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      overflow: visible;
+    }
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      overflow: hidden;
+      height: 100vh;
+    }
+  }
+
+  .reveal-title {
+    text-align: center;
+    margin-top: 20px;
   }
 
   // Overlay
@@ -137,17 +230,89 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
     @include reveal-modal-base;
     @include reveal-modal-width($reveal-width);
     position: relative;
-    top: 100px;
-    margin-right: auto;
     margin-left: auto;
-    overflow-y: auto;
+    margin-right: auto;
+
+    .close-button {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      color: #000;
+      z-index: 1;
+
+      &:before {
+        font-size: 24px;
+      }
+
+      @include breakpoint(medium) {
+        color: $white;
+        top: initial;
+        right: 0;
+        bottom: calc(100% + 25px);
+      }
+
+      @include breakpoint(large) {
+        left: calc(100% + 25px);
+        top: 0;
+      }
+    }
+
+    &#supportModal {
+      //padding: 75px 1rem 50px 1rem;
+      //min-height: 100vh;
+    }
+
+    &#videoModal {
+      padding: 0;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      min-height: initial;
+
+      @media (max-width: 767px) {
+        overflow: hidden;
+      }
+
+      @include breakpoint(xlarge) {
+        width: 60%;
+      }
+
+      .close-button {
+        color: $white;
+
+        @media only screen 
+          and (min-device-width: 320px) 
+          and (max-device-width: 568px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape) {
+            right: 0;
+            top: 25px;
+        }
+
+        @media only screen 
+          and (min-device-width: 320px) 
+          and (max-device-width: 568px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: portrait) {
+            color: $white;
+            top: initial;
+            right: 0;
+            bottom: calc(100% + 25px);
+        }
+      }
+    }
+
+    &.fadeInBottom {
+      animation: fadeIn 1s ease;
+    }
+
 
     // Placeholder selector for medium-and-up modals
     // Prevents duplicate CSS when defining multiple Reveal sizes
     @include breakpoint(medium) {
       %reveal-centered {
-        right: auto;
         left: auto;
+        right: auto;
         margin: 0 auto;
       }
     }

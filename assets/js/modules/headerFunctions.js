@@ -5,10 +5,7 @@ import '../libs/materialize/scrollspy';
 import '../libs/materialize/tabs';
 
 export default {
-    /**
-     * метод для инициализации модального
-     * окна, которое есть на нескольких страницах
-     */
+
     init(){
         this.headerFunctions();
     },

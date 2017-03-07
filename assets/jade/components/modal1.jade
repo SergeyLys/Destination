@@ -1,0 +1,29 @@
+.reveal#supportModal(data-reveal)
+    button.close-button.icon-cancel(data-close type="button")
+    .reveal-wrapper
+        .reveal-title
+            h2 Support
+            p Have any questions or feedback?
+        form(action="#")
+            fieldset
+                span.input.input--ichiro
+                    input.input__field.input__field--ichiro(required type="text" id="mail")
+                    label.input__label.input__label--ichiro(for="mail")
+                        span.input__label-content.input__label-content--ichiro.required Your email #[small.required *]
+            fieldset
+                span.input.input--ichiro.input--filled
+                    //input.input__field.input__field--ichiro(required type="text" id="subject")
+                    select(id="subject").input.input__field
+                        option(value='1') option1
+                        option(value='2') option2
+                    label.input__label.input__label--ichiro(for="subject")
+                        span.input__label-content.input__label-content--ichiro.required subject #[small.required *]
+            fieldset
+                span.input.input--ichiro
+                    textarea.input__field.input__field--ichiro(required id="description")
+                    label.input__label.input__label--ichiro(for="description")
+                        span.input__label-content.input__label-content--ichiro.required Description #[small.required *]
+                span.input-description Please enter the details of your request. A member of our support staff will respond as soon as possible.
+                
+            .text-center
+                button.button submit a request
