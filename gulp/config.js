@@ -14,7 +14,7 @@ var options = {
     },
 
     styles:{
-        src: ['./assets/css/style.scss', './assets/css/pages/**/*.scss'],
+        src: ['./assets/css/style.scss', './assets/css/fonts.scss', './assets/css/pages/**/*.scss'],
         dest:'./dist/css',
         watch: './assets/css/**/*.scss'
     },

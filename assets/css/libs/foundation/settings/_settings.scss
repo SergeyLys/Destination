@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1000);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -74,6 +74,13 @@ $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
+$font-bebas: 'BebasNeue', sans-serif;
+$font-proxima-bold: 'proxima_nova_rgbold', sans-serif;
+$font-proxima-extrabold: 'proxima_nova_thextrabold', sans-serif;
+$font-proxima-semibold: 'proxima_nova_ltsemibold', sans-serif;
+$font-proxima-light: 'proxima_nova_ltlight', sans-serif;
+$font-proxima-reg: 'proxima_nova_rgregular', sans-serif;
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
@@ -95,7 +102,7 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
+  small: 30px,
   medium: 30px,
 );
 $grid-column-align-edge: true;

@@ -24,7 +24,9 @@
   </head>
   <body class="home-page">
     <div class="wrapper">
-      <section class="full-height"></section>
+      <section style="background-image: url(../images/bg-first.jpg)" class="full-height first-section has-background">
+        <div class="small-24 columns"><a href="javascript:void(0)" data-open="supportModal" class="popup-video-btn">play video</a></div>
+      </section>
       <header class="site-header">
         <nav class="site-nav">
           <ul>
@@ -39,7 +41,24 @@
           <p>content</p>
         </section>
         <section id="structure" class="scrollspy full-height">
-          <p>content</p>
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="tabs-wrapper">
+                <div class="tab-links"><a href="#tab1" class="active">Ступень 1</a><a href="#tab2">Ступень 2</a><a href="#tab3">Ступень 3</a></div>
+                <div class="tab-content">
+                  <div id="tab1" class="tab-item">
+                    <p>Ступень 1</p>
+                  </div>
+                  <div id="tab2" class="tab-item">
+                    <p>Ступень 2</p>
+                  </div>
+                  <div id="tab3" class="tab-item">
+                    <p>Ступень 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="initialization" class="scrollspy full-height">
           <p>content</p>
@@ -48,6 +67,33 @@
       <footer class="site-footer">
         <p>footer</p>
       </footer>
+      <div id="supportModal" data-reveal class="reveal">
+        <button data-close type="button" class="close-button icon-cancel"></button>
+        <div class="reveal-wrapper">
+          <div class="reveal-title">
+            <h2>Support</h2>
+            <p>Have any questions or feedback?</p>
+          </div>
+          <form action="#">
+            <fieldset><span class="input input--ichiro">
+                <input required type="text" id="mail" class="input__field input__field--ichiro">
+                <label for="mail" class="input__label input__label--ichiro"><span class="input__label-content input__label-content--ichiro required">Your email <small class="required">*</small></span></label></span></fieldset>
+            <fieldset><span class="input input--ichiro input--filled">
+                <!--input.input__field.input__field--ichiro(required type="text" id="subject")-->
+                <select id="subject" class="input input__field">
+                  <option value="1">option1</option>
+                  <option value="2">option2</option>
+                </select>
+                <label for="subject" class="input__label input__label--ichiro"><span class="input__label-content input__label-content--ichiro required">subject <small class="required">*</small></span></label></span></fieldset>
+            <fieldset><span class="input input--ichiro">
+                <textarea required id="description" class="input__field input__field--ichiro"></textarea>
+                <label for="description" class="input__label input__label--ichiro"><span class="input__label-content input__label-content--ichiro required">Description <small class="required">*</small></span></label></span><span class="input-description">Please enter the details of your request. A member of our support staff will respond as soon as possible.</span></fieldset>
+            <div class="text-center">
+              <button class="button">submit a request</button>
+            </div>
+          </form>
+        </div>
+      </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="../js/global.js"></script>
     </div>
