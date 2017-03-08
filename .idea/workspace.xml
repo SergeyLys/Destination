@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986f49a3-5648-491d-b491-155613db40ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Proxima_Nova.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/bebasneue_bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/webfontkit-20170307-153319.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/bg-first.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/predestination-mockup-7mar2017.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/components/_tabSwitcher.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/components/modal1.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.abide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.accordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.accordionMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.drilldown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.dropdownMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.equalizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.interchange.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.magellan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.orbit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.responsiveMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.responsiveToggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.reveal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.sticky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.toggler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.box.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.keyboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.mediaQuery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.motion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.nest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.timerAndImageLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.util.triggers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/libs/foundation/foundation.zf.responsiveAccordionTabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/modules/reveal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/modules/tabSwitcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/pages/HOME.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/modules/ABOUT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/modules/HOME.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/modules/global.js" afterPath="$PROJECT_DIR$/assets/js/modules/headerFunctions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/components/_header.scss" afterPath="$PROJECT_DIR$/assets/css/components/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/_mixins.scss" afterPath="$PROJECT_DIR$/assets/css/libs/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/foundation/_global.scss" afterPath="$PROJECT_DIR$/assets/css/libs/foundation/_global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/foundation/components/_reveal.scss" afterPath="$PROJECT_DIR$/assets/css/libs/foundation/components/_reveal.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/foundation/foundation.scss" afterPath="$PROJECT_DIR$/assets/css/libs/foundation/foundation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/foundation/grid/_grid.scss" afterPath="$PROJECT_DIR$/assets/css/libs/foundation/grid/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/libs/foundation/settings/_settings.scss" afterPath="$PROJECT_DIR$/assets/css/libs/foundation/settings/_settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/pages/_global.scss" afterPath="$PROJECT_DIR$/assets/css/pages/_global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/components/secFirst.jade" afterPath="$PROJECT_DIR$/assets/jade/components/secFirst.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/components/secThird.jade" afterPath="$PROJECT_DIR$/assets/jade/components/secThird.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/templates/pageTemplate.jade" afterPath="$PROJECT_DIR$/assets/jade/templates/pageTemplate.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/global.js" afterPath="$PROJECT_DIR$/assets/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.css" afterPath="$PROJECT_DIR$/dist/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/html/home.html" afterPath="$PROJECT_DIR$/dist/html/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/global.js" afterPath="$PROJECT_DIR$/dist/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/config.js" afterPath="$PROJECT_DIR$/gulp/config.js" />
     </list>
     <ignored path="destination.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,8 +98,8 @@
       <file leaf-file-name="_settings.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/libs/foundation/settings/_settings.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="362">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -542,12 +477,12 @@
       <workItem from="1488269793133" duration="13971000" />
       <workItem from="1488287930303" duration="838000" />
       <workItem from="1488362332381" duration="1049000" />
-      <workItem from="1488977417715" duration="2776000" />
+      <workItem from="1488977417715" duration="2875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22444000" />
+    <option name="totallyTimeSpent" value="22543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
@@ -560,7 +495,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -991,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/libs/foundation/settings/_settings.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state relative-caret-position="362">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>
