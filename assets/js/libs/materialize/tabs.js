@@ -44,13 +44,6 @@
           $active = $(this).find('li a').first();
         }
 
-
-
-
-        // console.log($(this).find('li a'));
-
-
-
         // $active.addClass('active');
         $index = $links.index($active);
         if ($index < 0) {
@@ -69,7 +62,6 @@
           // $indicator.css({"left": $index * $tab_width});
 
           setTimeout(function() {
-
             $indicator.css({"right": calcRightPos($active) });
             $indicator.css({"left": calcLeftPos($active) });
           }, 0);
