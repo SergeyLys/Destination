@@ -40,7 +40,7 @@ $medium-gray: #cacaca !default;
 
 /// Color used for dark gray UI items.
 /// @type Color
-$dark-gray: #8a8a8a !default;
+$dark-gray: #333333 !default;
 
 /// Color used for black ui items.
 /// @type Color
@@ -50,17 +50,18 @@ $black: #0a0a0a !default;
 /// @type Color
 $white: #fefefe !default;
 
+$red: #ef2146 !default;
+
 /// Background color of the body.
 /// @type Color
 $body-background: $white !default;
 
 /// Text color of the body.
 /// @type Color
-$body-font-color: $black !default;
+$body-font-color: $dark-gray !default;
 
 /// Font stack of the body.
 /// @type List
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 $font-bebas: 'BebasNeue', sans-serif !default;
 $font-proxima-bold: 'proxima_nova_rgbold', sans-serif !default;
@@ -68,6 +69,10 @@ $font-proxima-extrabold: 'proxima_nova_thextrabold', sans-serif !default;
 $font-proxima-semibold: 'proxima_nova_ltsemibold', sans-serif !default;
 $font-proxima-light: 'proxima_nova_ltlight', sans-serif !default;
 $font-proxima-reg: 'proxima_nova_rgregular', sans-serif !default;
+$font-opensans-bold: 'open_sans', sans-serif !default;
+
+$body-font-family: $font-proxima-reg;
+
 
 /// Set to `true` to enable antialiased type, using the `-webkit-font-smoothing` and `-moz-osx-font-smoothing` CSS properties.
 /// @type Boolean
@@ -147,6 +152,10 @@ $alert-color: get-color(alert);
     font-weight: $global-weight-normal;
     line-height: $global-lineheight;
     color: $body-font-color;
+
+    &.fixed-header {
+      margin-top: 76px;
+    }
 
     @if ($body-antialiased) {
       -webkit-font-smoothing: antialiased;

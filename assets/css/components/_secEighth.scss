@@ -1,0 +1,108 @@
+.section-eighth {
+	padding-bottom: 60px;
+
+	@include breakpoint(medium) {
+		padding-bottom: 115px;
+	}
+
+	.section-title {
+		padding-top: 60px;
+
+		@include breakpoint(medium) {
+			padding-top: 120px;
+		}
+	}
+}
+
+.coach-wrapper {
+	margin-bottom: 15px;
+
+	@include breakpoint(large) {
+		margin-bottom: 0;
+	}
+}
+
+.coach-item {
+	.coach-image {
+		margin-bottom: 25px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.coach-title {
+		margin-bottom: 20px;
+
+		span {
+			color: #999999;
+			font-family: $font-proxima-bold;
+			font-size: 17px;
+			line-height: 22px;
+		}
+	}
+
+	a {
+		color: $red;
+		font-family: $font-proxima-semibold;
+		border-bottom: 1px solid rgba($red, .7);
+		transition: all .3s ease;
+
+		&:hover {
+			border-color: rgba($red, 1);
+		}
+	}
+
+	.coach-content {
+		p {
+			font-size: 15px;
+			line-height: 21px;
+			position: relative;
+			margin-bottom: 13px;
+			padding-bottom: 13px;
+
+			&:not(:last-child):after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 32px;
+				height: 2px;
+				background: $red;
+			}
+		}
+	}
+}
+
+.coach-bottom-wrapper {
+
+	img {
+		margin-bottom: 20px;
+
+		@include breakpoint(large) {
+			margin-bottom: 0;
+		}
+	}
+
+	.section-content {
+		margin-bottom: 20px;
+		p {
+			font-size: 15px;
+			line-height: 22px;
+			margin: 0;
+		}
+	}
+	.title {
+		h3 {
+			font-family: $font-proxima-bold;
+			margin: 0;
+		}
+
+		span {
+			font-size: 17px;
+			line-height: 20px;
+			font-family: $font-proxima-bold;
+			color: #999999;
+		}
+	}
+}

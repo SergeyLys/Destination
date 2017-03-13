@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Alignments wp
 --------------------------------------------------------------*/
+* {
+  outline: none !important;
+}
+
 .alignleft {
   display: inline;
   float: left;
@@ -22,10 +26,167 @@
 
 .full-height {
   min-height: 100vh;
+  width: 100%;
 }
 
 .has-background {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.offset-section {
+  &.dark {
+    * {
+      color: $white;
+    }
+  }
+}
+
+.section-content {
+  p {
+    font-size: 17px;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+.section-title {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  position: relative;
+
+  &.dark {
+    h2 {
+      color: $white;
+    }
+  }
+
+  .description {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    p {
+      font-size: 17px;
+      line-height: 24px;
+      margin: 0;
+      text-transform: none;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background: $red;
+  }
+
+  &.v2 {
+    padding-bottom: 0;
+    
+    &:before {
+      display: none;
+    }
+  }
+
+  &.text-center {
+    &:before {
+      left: calc(50% - 60px);
+    }
+  }
+
+  span {
+    color: $red !important;
+  }
+}
+
+.dark-bg {
+  background-color: #f1f1f1;
+}
+
+.skew-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    z-index: -1;
+  }
+
+  &.top {
+    &.left-top {
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transform: skew(-84deg);
+        background-color: #fefefe;
+        transform-origin: top;
+
+        @media (min-width: 1920px) {
+          transform: skew(-86deg);
+        }
+      }
+    }
+
+    &.top-dark {
+      &:before {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  &.bottom {
+    padding-bottom: 75px;
+
+    @include breakpoint(medium) {
+      padding-bottom: 150px;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      transform: skew(-84deg);
+      background-color: #fefefe;
+      transform-origin: bottom;
+
+      @media (min-width: 1920px) {
+        transform: skew(-86deg);
+      }
+    }
+
+    &.left-top {
+      &:after {
+        
+      }
+    }
+
+    &.left-bottom {
+      &:after {
+        transform: skew(84deg);
+
+        @media (min-width: 1920px) {
+          transform: skew(86deg);
+        }
+      }
+    }
+
+    &.bottom-dark {
+      &:after {
+        background-color: #f1f1f1;
+      }
+    }
+  }
 }

@@ -1,0 +1,106 @@
+section.scrollspy#steps.section-seventh
+  .row
+    .small-12.columns
+      .section-title
+        h2 Как проходит обучение?
+        .description
+          p Обучение проходит в режиме blended-learning
+
+  .row.expanded.expand-images
+    .b-image
+      img(src="../images/img2.jpg", alt="pic")
+    .b-image
+      img(src="../images/img1.jpg", alt="pic")
+    .top-layer
+      h2 #[span Онлайн] + живое участие
+
+  .row
+    .small-12.columns
+      .tabs-wrapper
+        .tab-links
+            a(href='#tab1').waves-effect.waves-light.active Ступень 1
+            a(href='#tab2').waves-effect.waves-light Ступень 2
+            a(href='#tab3').waves-effect.waves-light Ступень 3
+        .tab-content
+            .tab-item#tab1
+              .section-title
+                h2: span Ступень 1. Быстрые результаты
+                .info-row
+                  .info-item
+                    include ../../images/svg-icons/ic-calendar.svg
+                    p с 1 по 9 марта 2017
+                  .info-item
+                    include ../../images/svg-icons/ic-clock.svg
+                    p 8 дней  по 1 час/день
+                  .info-item
+                    include ../../images/svg-icons/ic-planet.svg
+                    p Москва+онлайн
+              .row
+                .small-12.large-7.columns
+                  .text-row
+                    h5 Задача:
+                    p Заложить фундамент для масштабных изменений в жизни и запустить маховик перемен к лучшему.
+                  .text-row
+                    h5 Содержание:
+                    ul.list
+                      li.
+                        Заложить фундамент для масштабных изменений в жизни,
+                        и запустить маховик перемен к лучшему.
+                      li.
+                        3 аксиомы непрерывного роста (90% всех проблем в жизни людей; то, без чего добиться успеха невозможно в любом деле);
+                      li Первые шаги в поиске себя.
+                  .text-row
+                    h5 Формат:
+                    p Вживую в зале + онлайн кабинет, сквозные практики, полевые задания, групповые процессы, отчеты, работа с куратором.
+                    p.
+                      — 2 среды — по 3 часа (теория). Участники из Москвы — в общем зале, участники из регионов #[br/]
+                      — прямая трансляция + живой чат. #[br/]
+                      — 7 дней практик «в полях» между средами. Участники по командам. Задания выдаются каждое утро в онлайн-кабинете.
+                  .text-row
+                    h5 На выходе:
+                    ul.list
+                      li.
+                        Встроенные через непрерывную практику 3 фундаментальные аксиомы непрерывного роста;
+                      li Большой заряд энергии для движения вперед.
+                .small-12.large-5.columns
+                  .mind-map-wrapper
+                    img(src='../images/mindmap.jpg' alt='mindmap')
+                    a(href='javascript:void(0)' data-open="mindmap").popup-link.button.transparent.gray.semibold.mindmap-link Увеличить mindmap
+                  #mindmap.reveal(data-reveal)
+                    button.close-button.icon-cancel(data-close type="button")
+                    .reveal-wrapper
+                      img(src='../images/mindmap.jpg' alt='mindmap')
+              .row.align-center.days-row
+                .small-12.medium-6.large-4.columns.day-item-wrapper
+                  article.day-item
+                    .day-title
+                      h4 День 1
+                      span Среда (19.00–22.00)
+                    .day-content
+                      p Знакомство, настройка на работу, вводная теория, разделение на команды, групповые процессы.
+                .small-12.medium-6.large-4.columns.day-item-wrapper
+                  article.day-item
+                    .day-title
+                      h4 День 2-8
+                      span Четверг-Среда (30 мин/день) 
+                    .day-content
+                      p Каждый день 3 сквозные + 1 практика «в полях», отчеты в личном кабинете, поддержка в общем чате. 100% практика без теории.
+                .small-12.medium-6.large-4.columns.day-item-wrapper
+                  article.day-item
+                    .day-title
+                      h4 День 8
+                      span Среда (19.00–22.00)
+                    .day-content
+                      p Финал практик, подведение результатов (вычленение нового опыта), план действий на будущее, настройка на следующую ступень обучения.
+
+            .tab-item#tab2
+                p Ступень 2
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laborum praesentium, doloribus suscipit optio, quis sequi nihil necessitatibus repudiandae vitae quas, reprehenderit delectus id deleniti eius debitis magnam commodi architecto. Quis repellat voluptate pariatur dolor ex eos numquam sint officiis, cum nemo tenetur dolorum, corporis consectetur, repudiandae quasi molestias rem.
+            .tab-item#tab3
+                p Ступень 3
+  
+  form.row.days-form
+    .small-12.large-6.columns
+      input(type="text" placeholder='Ваш телефон')
+    .small-12.large-6.columns
+      button.button Оставить заявку на обучение

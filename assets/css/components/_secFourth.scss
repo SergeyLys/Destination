@@ -1,0 +1,75 @@
+.section-fourth {
+	.skew-section {
+		padding-top: 75px;
+
+		@include breakpoint(medium) {
+			padding-top: 0;
+		}
+
+		@include breakpoint(xlarge) {
+			padding-top: 0;
+		}
+	}
+	.offset-section {
+		background: $dark-gray;
+		margin-bottom: 50px;
+		padding: 25px 15px;
+
+		.offet-section_top {
+			p {
+				font-family: $font-proxima-bold;
+				font-size: 21px;
+			}
+		}
+
+		.section-content {
+			p {
+				font-family: $font-proxima-semibold;
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+
+		@include breakpoint(medium) {
+			padding: 45px 40px;
+			margin-bottom: 80px;
+		}
+
+		@include breakpoint(large) {
+			padding: 90px 80px;
+			margin-right: -30px;
+		}
+
+		.button {
+			margin-top: 20px;
+			margin-bottom: 0;
+			font-size: 23px;
+		}
+	}
+}
+
+.statistics {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+
+	.stat-item {
+		width: 100%;
+		margin-bottom: 45px;
+
+		span {
+			font-size: 50px;
+			font-family: $font-proxima-light;
+		}
+
+		p {
+			font-size: 14px;
+			font-family: $font-proxima-semibold;
+			line-height: 19px;
+		}
+
+		@include breakpoint(medium) {
+			width: 33%;
+		}
+	}
+}

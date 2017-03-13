@@ -8,7 +8,7 @@
 
 /// Padding inside buttons.
 /// @type List
-$button-padding: 0.85em 1em !default;
+$button-padding: 24px 81px !default;
 
 /// Margin around buttons.
 /// @type List
@@ -20,7 +20,7 @@ $button-fill: solid !default;
 
 /// Default background color for buttons.
 /// @type Color
-$button-background: $primary-color !default;
+$button-background: $red !default;
 
 /// Background color on hover for buttons.
 /// @type Color
@@ -70,7 +70,7 @@ $button-hollow-hover-lightness: -50% !default;
 
 /// transitions for buttons.
 /// @type List
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out !default;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out !default;
 
 // TODO: Document button-base() mixin
 @mixin button-base {
@@ -78,17 +78,23 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
   display: inline-block;
   vertical-align: middle;
   margin: $button-margin;
-  padding: $button-padding;
+  padding: 15px 30px;
 
   -webkit-appearance: none;
-  border: 1px solid transparent;
+  border: 4px solid $red;
   border-radius: $button-radius;
   transition: $button-transition;
 
-  font-size: map-get($button-sizes, default);
+  font-size: 16px;
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
+
+  @include breakpoint(medium) {
+    padding: $button-padding;
+    font-size: 25px;
+  }
 }
 
 /// Expands a button to make it full-width.
@@ -125,12 +131,13 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
     $background-hover: scale-color($background, $lightness: $background-hover-lightness);
   }
 
-  background-color: $background;
+  background-color: $red;
   color: $color;
 
   &:hover, &:focus {
     background-color: $background-hover;
     color: $color;
+    border-color: $button-background-hover;
   }
 }
 
@@ -228,6 +235,25 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
     }
 
     &.expanded { @include button-expand; }
+
+    &.transparent {
+      background: transparent;
+      border: 4px solid $white;
+    }
+
+    &.gray {
+      background: transparent;
+      color: #999;
+      border: 4px solid #999;
+    }
+
+    &.bold {
+      font-family: $font-proxima-bold;
+    }
+
+    &.semibold {
+      font-family: $font-proxima-semibold;
+    }
 
     // Colors
     @each $name, $color in $button-palette {

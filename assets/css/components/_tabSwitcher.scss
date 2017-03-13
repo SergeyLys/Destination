@@ -1,6 +1,86 @@
 .tabs-wrapper {
+  overflow: hidden;
+
+  .tab-selector {
+    position: relative;
+
+    .active-tab {
+      font-size: 18px;
+      font-family: $font-proxima-bold;
+      color: #666666;
+      padding: 11px 28px;
+      border: 1px solid #666;
+      position: relative;
+      background: $white;
+      display: block;
+      cursor: pointer;
+
+      @include breakpoint(medium) {
+        display: none;
+      }
+
+      &:before {
+        content: '';
+        border: 7px solid transparent;
+        border-top: 7px solid #999;
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 3px);
+      }
+    }
+  }
+  
   .tab-links {
-    display: flex;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    @include breakpoint(medium) {
+      display: flex !important;
+      position: static;
+    }
+
+    a {
+      font-size: 18px;
+      font-family: $font-proxima-bold;
+      color: #666666;
+      padding: 11px 28px;
+      border: 1px solid #666;
+      position: relative;
+      background: $white;
+      transition: all .3s ease;
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+      + a {
+        @include breakpoint(medium) {
+          margin-left: 30px;
+        }
+      }
+
+      &.active {
+        border-color: $red;
+        color: $white;
+        background: $red;
+
+        @include breakpoint(medium) {
+          &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            border: 13px solid transparent; 
+            border-top: 13px solid $red;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
   }
 
   .tab-content {
@@ -16,6 +96,7 @@
         position: relative;
         opacity: 1;
         visibility: visible;
+        transition: all .3s ease .3s;
       }
     }
   }

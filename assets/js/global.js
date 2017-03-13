@@ -21,9 +21,9 @@ $(window).on('scroll', function() {
             st = $('.site-header').offset().top;
 
         if (ws >= st) {
-            $('.site-nav').addClass('fixed');
+            $('.site-header_inner').addClass('fixed');
         } else {
-            $('.site-nav').removeClass('fixed');
+            $('.site-header_inner').removeClass('fixed');
         }
     }
 });

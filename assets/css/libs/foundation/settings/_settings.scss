@@ -56,14 +56,24 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+$font-bebas: 'BebasNeue', sans-serif;
+$font-proxima-bold: 'proxima_nova_rgbold', sans-serif;
+$font-proxima-extrabold: 'proxima_nova_thextrabold', sans-serif;
+$font-proxima-semibold: 'proxima_nova_ltsemibold', sans-serif;
+$font-proxima-light: 'proxima_nova_ltlight', sans-serif;
+$font-proxima-reg: 'proxima_nova_rgregular', sans-serif;
+$font-opensans-bold: 'open_sans', sans-serif;
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #333333;
 $black: #0a0a0a;
 $white: #fefefe;
+$red: #ef2146;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $dark-gray;
+$body-font-family: $font-proxima-reg;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -74,12 +84,7 @@ $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
-$font-bebas: 'BebasNeue', sans-serif;
-$font-proxima-bold: 'proxima_nova_rgbold', sans-serif;
-$font-proxima-extrabold: 'proxima_nova_thextrabold', sans-serif;
-$font-proxima-semibold: 'proxima_nova_ltsemibold', sans-serif;
-$font-proxima-light: 'proxima_nova_ltlight', sans-serif;
-$font-proxima-reg: 'proxima_nova_rgregular', sans-serif;
+
 
 @include add-foundation-colors;
 
@@ -88,13 +93,13 @@ $font-proxima-reg: 'proxima_nova_rgregular', sans-serif;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
+  medium: 768px,
   large: 1024px,
-  xlarge: 1200px,
+  xlarge: 1280px,
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -111,7 +116,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $font-proxima-bold;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -120,19 +125,19 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 20),
     'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 14),
   ),
   medium: (
-    'h1': ('font-size': 48),
+    'h1': ('font-size': 65),
     'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h3': ('font-size': 28),
     'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h5': ('font-size': 19),
     'h6': ('font-size': 16),
   ),
 );
@@ -247,10 +252,10 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 24px 81px;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $red;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
@@ -265,7 +270,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
 
 // 12. Button Group
 // ----------------
@@ -506,7 +511,7 @@ $responsive-embed-ratios: (
 // ----------
 
 $reveal-background: $white;
-$reveal-width: 600px;
+$reveal-width: auto;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
 $reveal-border: 1px solid $medium-gray;

@@ -1,13 +1,27 @@
 @import "libs/foundation/settings/settings";
 @import "libs/foundation/foundation";
+// @import "libs/materialize/materialize";
 
 @import "libs/variables";
 @import "libs/mixins";
 @import "libs/fonts";
+@import "libs/slick/slick";
+@import "libs/slick/slick-theme";
 
 @import "components/header";
 @import "components/footer";
 @import "components/tabSwitcher";
+@import "components/sliders";
+
+@import "components/secFirst";
+@import "components/secSecond";
+@import "components/secThird";
+@import "components/secFourth";
+@import "components/secFives";
+@import "components/secSixth";
+@import "components/secSeventh";
+@import "components/secEighth";
+@import "components/secNinth";
 
 @import "pages/global";
 @import "pages/home";

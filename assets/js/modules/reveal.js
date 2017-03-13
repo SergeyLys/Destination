@@ -15,21 +15,19 @@ export default {
 		
 		const reveals = $('.reveal');
 
-		// var src = $('iframe').attr('src')
-
 		reveals
 			.on('open.zf.reveal', function (e) {
 				$(this).addClass('fadeInBottom');
-				// if ($(this).find('iframe')) {
-				// 	$(this).find('iframe')[0].src += "&autoplay=1";
-				// }
+				if ($(this).find('iframe').length != 0) {
+					let src = $(this).find('iframe').attr('data-src');
+					$(this).find('iframe')[0].src = src+"&autoplay=1";
+				}
 			})
 			.on('closed.zf.reveal', function (e) {
 				$(this).removeClass('fadeInBottom');
-
-				// if ($(this).find('iframe')) {
-				// 	$(this).find('iframe').attr('src', src);
-				// }
+				if ($(this).find('iframe').length != 0) {
+					$(this).find('iframe').attr('src', '');
+				}
 			});
 	}
 }

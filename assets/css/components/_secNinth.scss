@@ -1,0 +1,11 @@
+.section-ninth {
+	.section-title {
+		padding-top: 70px;
+		margin-bottom: 40px;
+
+		@include breakpoint(medium) {
+			padding-top: 140px;
+			margin-bottom: 70px;
+		}
+	}
+}

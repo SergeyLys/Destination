@@ -1,0 +1,7 @@
+.section-sixth {
+  padding-top: 55px;
+
+  @include breakpoint(medium) {
+    padding-top: 110px;
+  }
+}

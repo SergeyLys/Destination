@@ -1,0 +1,204 @@
+.section-seventh {
+	padding-bottom: 50px;
+
+	@include breakpoint(medium) {
+		padding-bottom: 80px;
+	}
+
+	.tabs-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.section-title {
+		padding-top: 85px;
+	}
+
+	.expand-images {
+		margin-top: 40px;
+		margin-bottom: 115px;
+
+		.b-image {
+			display: none;
+
+			@include breakpoint(large) {
+				&:first-child {
+					display: block;
+				}
+			}
+
+			@include breakpoint(xlarge) {
+				display: block;
+			}
+		}
+	}
+}
+
+.expand-images {
+	display: flex;
+	position: relative;
+
+	.top-layer {
+		padding: 25px 30px;
+		background: rgba($dark-gray, .7);
+
+		@include breakpoint(large) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		@include breakpoint(xlarge) {
+			top: auto;
+			bottom: 45px;
+			left: calc(50% + 82px);
+			transform: translateX(-50%) translateY(0);
+		}
+
+		h2 {
+			font-size: 40px;
+			text-transform: uppercase;
+			font-family: $font-proxima-bold;
+			color: $white;
+			margin: 0;
+
+			span {
+				color: $red;
+			}
+		}
+	}
+
+	.b-image {
+		width: 100%;
+
+		@include breakpoint(xlarge) {
+			width: 50%;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.info-row {
+	display: flex;
+	margin-top: 30px;
+	flex-wrap: wrap;
+
+	.info-item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		svg {
+			margin-right: 20px;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		@include breakpoint(medium) {
+			width: 50%;
+		}
+
+		@include breakpoint(large) {
+			width: 33.3333333%;
+		}
+	}
+}
+
+.text-row {
+	margin-bottom: 30px;
+}
+
+.mindmap-link {
+	font-size: 15px !important;
+	padding: 9px 11px !important;
+}
+
+.mind-map-wrapper {
+	text-align: center;
+
+	img {
+		margin-bottom: 60px;
+		display: none;
+		
+		@include breakpoint(large) {
+			display: block;
+		}
+	}
+}
+
+#mindmap {
+	background: transparent;
+	text-align: center;
+	
+	.reveal-wrapper {
+		background: transparent;
+	}
+}
+
+.days-row {
+	margin-top: 40px;
+}
+
+.day-item-wrapper {
+	margin-bottom: 30px;
+
+	@include breakpoint(large) {
+		margin-bottom: 90px;
+	}
+}
+
+.day-item {
+	padding: 25px;
+	background: $dark-gray;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.day-title {
+		margin-bottom: 25px;
+		flex-grow: 1;
+
+		h4 {
+			color: $red;
+			font-family: $font-proxima-bold;
+			text-transform: uppercase;
+		}
+
+		span {
+			font-size: 20px;
+			font-family: $font-proxima-semibold;
+			color: $white;
+		}
+	}
+
+	.day-content {
+		font-size: 15px;
+		color: $white;
+	}
+}
+
+.days-form {
+	input {
+		font-size: 20px;
+		padding: 20px;
+		width: 100%;
+		height: 100%;
+	}
+
+	button {
+		margin: 0;
+		width: 100%;
+		font-size: 23px !important;
+
+		@include breakpoint(large) {
+			padding: 0 !important;
+			height: 100%;
+		}
+	}
+}

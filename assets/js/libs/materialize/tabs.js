@@ -84,9 +84,13 @@
         });
 
         $(window).on('scroll', function() {
-          $active = $this.find('li a.active');
-          $indicator.velocity({"left": calcLeftPos($active) }, { duration: 400, queue: false, easing: 'easeOutQuad'});
-          $indicator.velocity({"right": calcRightPos($active) }, {duration: 400, queue: false, easing: 'easeOutQuad', delay: 90});
+          setTimeout(function() {
+            $active = $this.find('li a.active');
+            if ($active.length != 0) {
+              $indicator.velocity({"left": calcLeftPos($active) }, { duration: 400, queue: false, easing: 'easeOutQuad'});
+              $indicator.velocity({"right": calcRightPos($active) }, {duration: 400, queue: false, easing: 'easeOutQuad', delay: 90});
+            }
+          }, 100);
         });
       });
     }
