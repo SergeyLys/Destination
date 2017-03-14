@@ -15,7 +15,6 @@ switch (global.vars.page) {
 $(document).ready(init());
 
 $(window).on('scroll', function() {
-    
     if ($('.first-section').length != 0) {
         let ws = $(window).scrollTop(),
             st = $('.site-header').offset().top;
@@ -25,5 +24,7 @@ $(window).on('scroll', function() {
         } else {
             $('.site-header_inner').removeClass('fixed');
         }
+    } else {
+        $('.site-header_inner').addClass('fixed');
     }
 });

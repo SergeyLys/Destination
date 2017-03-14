@@ -1,6 +1,149 @@
 section.scrollspy#rates.section-ninth
   .skew-section.bottom.left-bottom.bottom-dark.full-height
-    .row.align-center
+    .row.align-center.rates-row
         .small-12.columns
             .section-title.v2.text-center
                 h2 Тарифы
+        .small-12.medium-6.large-3.columns.rate-wrapper
+          article.rate-item
+            .rate-item--top
+              .rate-title
+                h4 Ступень 1
+              .rate-price
+                span 10900р
+                p 6900р
+            .rate-content
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 1:
+                  “Быстрые результаты”
+                strong 1 марта
+          a(href="#").button.bold Купить
+        .small-12.medium-6.large-3.columns.rate-wrapper
+          article.rate-item
+            .rate-item--top
+              .rate-title
+                h4 Ступень 1
+              .rate-price
+                span 10900р
+                p 6900р
+            .rate-content
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 1:
+                  “Быстрые результаты”
+                strong 1 марта
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 2:
+                  «Живой Интенсив”
+                strong 21 апреля
+          a(href="#").button.bold Купить
+        .small-12.medium-6.large-3.columns.rate-wrapper
+          article.rate-item.red
+            .rate-item--top
+              .rate-title
+                h4 Ступень 1
+              .rate-price
+                span 10900р
+                p 6900р
+            .rate-content
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 1:
+                  “Быстрые результаты”
+                strong 1 марта
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 2:
+                  «Живой Интенсив”
+                strong 21 апреля
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 3:
+                  “Привычка воплощать
+                  мечту”
+                strong Дата уточняется
+              .rate-step.hot
+                strong Популярный тариф
+          a(href="#").button.bold Купить
+        .small-12.medium-6.large-3.columns.rate-wrapper
+          article.rate-item.vip
+            .rate-item--top
+              .rate-title
+                h2 VIP
+              .rate-price
+                p 300000р
+            .rate-content
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 1:
+                  “Быстрые результаты”
+                strong 1 марта
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 2:
+                  «Живой Интенсив”
+                strong 21 апреля
+              .rate-step
+                p.
+                  Предназначение.
+                  Ступень 3:
+                  “Привычка воплощать
+                  мечту”
+                strong Дата уточняется
+              .rate-step
+                strong.
+                  12-месячная
+                  программа 
+                  развития
+                p.
+                  Ежесезонные ВИП-встречи
+                  Групповая работа
+                  Личный разбор
+                  Годовое сопровождение
+          a(href="#").button.bold Купить
+
+
+    .row.align-center.form-row
+      .small-12.large-7.columns
+        .form-section-title
+          p.subtitle Обучающая программа
+          h2 Предназначение 2.0
+        .form-picture
+          img(src="../images/form-pic.jpg", alt="ipad")
+      .small-12.large-5.columns
+        .form-wrapper
+          .form-title
+            h4 Принять участие
+          form
+            .input-row
+              label(for="name") Имя
+              input(type="text" name='name')#name
+            .input-row
+              label(for="rate") Тариф
+              select#rate(name="rate")
+                option(value="0") Ступень 1+2+3
+                option(value="0") Ступень 1
+                option(value="0") Ступень 2
+                option(value="0") Ступень 3
+            .input-row
+              label(for="phone") Телефон
+              input(type="text" name='phone')#phone
+            .input-row
+              label(for="email") Email
+              input(type="text" name='email')#email
+            .submit-row
+              button.button Отправить заявку
+            .input-row
+              input(type="checkbox")#privacy
+              label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
+            p.description Если вы будете не довольны обучающей программой, то вам вернут все средства

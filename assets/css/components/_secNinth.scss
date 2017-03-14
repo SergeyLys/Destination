@@ -9,3 +9,230 @@
 		}
 	}
 }
+
+.rates-row {
+	margin-bottom: 40px;
+
+	@include breakpoint(medium) {
+		margin-bottom: 110px;
+	}
+}
+
+.rate-wrapper {
+	.button {
+		width: 100%;
+		margin-bottom: 30px;
+		display: block;
+		font-size: 18px;
+		padding: 10px;
+	}
+}
+
+.rate-item {
+	margin-bottom: 30px;
+
+	.rate-item--top {
+		padding: 25px 20px;
+		background: $dark-gray;
+	}
+
+	.rate-title {
+		margin-bottom: 20px;
+		h4 {
+			color: $red;
+		}
+	}
+
+	&.red {
+		.rate-item--top {
+			background: $red;
+		}
+
+		.rate-title {
+			h4 {
+				color: $white;
+			}
+		}
+
+		.rate-content {
+			border: 2px solid $red;
+		}
+
+		.rate-step {
+			&:not(:last-child) {
+				border-bottom: 2px solid $red;
+			}
+		}
+	}
+
+	&.vip {
+		.rate-title {
+			h2 {
+				color: $red;
+			}
+		}
+
+		.rate-content {
+			border: 2px solid rgba($dark-gray, .9);
+			background: rgba($dark-gray, .9);
+
+			p,
+			strong {
+				color: $white;
+			}
+		}
+
+		.rate-step {
+			&:not(:last-child) {
+				border-bottom: 2px solid $red;
+			}
+		}
+	}
+
+	.rate-price {
+		span {
+			text-decoration: line-through;
+			font-size: 18px;
+			font-family: $font-proxima-light;
+			color: $white;
+		}
+		p {
+			font-size: 40px;
+			font-family: $font-proxima-semibold;
+			color: $white;
+			margin: 0;
+			line-height: .85;
+		}
+	}
+
+	.rate-content {
+		padding: 0 20px 0 20px;
+		padding-bottom: 0;
+		border: 2px solid $dark-gray;
+	}
+
+	.rate-step {
+		padding-bottom: 15px;
+		padding-top: 25px;
+
+		&.hot {
+			strong {
+				color: $red;
+			}
+		}
+
+		&:not(:last-child) {
+			border-bottom: 2px solid $dark-gray;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 10px;
+		}
+
+		strong {
+			display: block;
+			font-size: 19px;
+			line-height: 24px;
+			font-family: $font-proxima-semibold;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.form-section-title {
+	margin-bottom: 45px;
+	
+	h2 {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	.subtitle {
+		font-size: 30px;
+		font-family: $font-proxima-bold;
+		margin-bottom: 10px;
+		line-height: .8;
+	}
+}
+
+.form-wrapper {
+	margin-top: 45px;
+
+	.form-title {
+		margin-bottom: 30px;
+
+		h4 {
+			color: $red;
+			font-size: 24px;
+			line-height: 40px;
+			text-transform: uppercase;
+			font-family: $font-proxima-bold;
+			margin: 0;
+		}
+	}
+
+	.description {
+		font-size: 13px;
+		line-height: 18px;
+		color: #999;
+		margin: 0;
+	}
+}
+
+.input-row {
+	margin-bottom: 20px;
+
+	label {
+		display: block;
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	select {
+		appearance: none;
+		position: relative;
+		background: url(../images/select-arrow.png) no-repeat;
+		background-position: calc(100% - 10px) center;
+	}
+
+	input,
+	select {
+		font-size: 18px;
+		line-height: 40px;
+		border: 1px solid #999;
+		border-radius: 2px;
+		box-shadow: none;
+		width: 100%;
+		padding-left: 15px;
+	}
+
+	input[type='checkbox'] {
+		width: auto;
+
+		+ label {
+			font-size: 13px;
+			line-height: 18px;
+			color: #999;
+			display: inline;
+		}
+	}
+}
+
+.submit-row {
+	.button {
+		font-size: 18px;
+		width: 100%;
+		padding: 15px;
+		margin-bottom: 45px;
+		margin-top: 20px;
+	}
+}
+
+.form-row {
+	@include breakpoint(medium) {
+		margin-bottom: 100px;
+	}
+}

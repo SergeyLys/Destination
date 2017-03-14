@@ -25,5 +25,18 @@ export default {
             $('.sandwich').removeClass('active');
             $(this).removeClass('active');
         });
+
+        if ($('.first-section').length != 0) {
+            let ws = $(window).scrollTop(),
+                st = $('.site-header').offset().top;
+
+            if (ws >= st) {
+                $('.site-header_inner').addClass('fixed');
+            } else {
+                $('.site-header_inner').removeClass('fixed');
+            }
+        } else {
+            $('.site-header_inner').addClass('fixed');
+        }
     }
 };
