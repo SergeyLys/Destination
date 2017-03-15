@@ -124,26 +124,34 @@ section.scrollspy#rates.section-ninth
         .form-wrapper
           .form-title
             h4 Принять участие
-          form
+          form(action='' method='POST')
             .input-row
               label(for="name") Имя
-              input(type="text" name='name')#name
+              input(type="text" name='bill_first_name' required)#name
             .input-row
               label(for="rate") Тариф
               select#rate(name="rate")
-                option(value="0") Ступень 1+2+3
-                option(value="0") Ступень 1
-                option(value="0") Ступень 2
-                option(value="0") Ступень 3
+                option(value="1") Ступень 1
+                option(value="2") Ступень 1+2
+                option(value="3") Ступень 1+2+3
+                option(value="4") VIP
             .input-row
-              label(for="phone") Телефон
-              input(type="text" name='phone')#phone
+              label Телефон
+              input(type="text" name='bill_phone' required)#phone
             .input-row
               label(for="email") Email
-              input(type="text" name='email')#email
+              input(type="text" name='bill_email' pattern="([A-Za-z0-9_\.-])+@[A-Za-z0-9-]+\.([A-Za-z]{2,4}\.)?[A-Za-z]{2,4}" required)#email
             .submit-row
               button.button Отправить заявку
             .input-row
               input(type="checkbox")#privacy
               label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
             p.description Если вы будете не довольны обучающей программой, то вам вернут все средства
+
+  .dark-bg.full-height.section-tenth
+    .row.align-center
+      .small-12.large-10.columns
+        .section-title
+          h2 Как проходит обучение?
+        .testimonials-wrapper(data-content='../../database.json')
+        a(href="#").add-more.button.transparent Еще отзывы

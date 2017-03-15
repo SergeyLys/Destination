@@ -14,6 +14,69 @@ html(lang="en")
             block content
 
             include ../components/site-footer
-            include ../components/modal1
             script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
             script(src="../js/global.js")
+
+            //Google Analytics
+            script.
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                                (i[r].q = i[r].q || []).push(arguments)
+                            }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-42404371-3', 'auto');
+                ga('send', 'pageview');
+
+            //Yandex Metrika
+            script.
+                (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter31406988 = new Ya.Metrika({ id:31406988, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+            noscript.
+                <div><img src="https://mc.yandex.ru/watch/31406988" style="position:absolute; left:-9999px;" alt="" /></div>
+
+            //VK
+            script.
+                (window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=obWM2J7v/Tdx778MBSYhaZxHVZ53KkRom*iZO2pN*Y4Aa7PRZMDL/BFOjspuuSLdwLJubowxUu/stB/C4I9idxh53eNiFLYyb*hpqh7AvQaCQuxpRd9l1oOD2JHDowIgI6mz35kcbDJeHoWNpfMzO*CmC99j7IzVBQi7*elXzf8-';
+
+            //Facebook
+            script.
+                (function () {
+                    var _fbq = window._fbq || (window._fbq = []);
+                    if (!_fbq.loaded) {
+                        var fbds = document.createElement('script');
+                        fbds.async = true;
+                        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(fbds, s);
+                        _fbq.loaded = true;
+                    }
+                    _fbq.push(['addPixelId', '413413042185766']);
+                })();
+                window._fbq = window._fbq || [];
+                window._fbq.push(['track', 'PixelInitialized', {}]);
+            noscript.
+                <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=413413042185766&amp;ev=PixelInitialized" />
+
+            script.
+                (function () {
+                    var _fbq = window._fbq || (window._fbq = []);
+                    if (!_fbq.loaded) {
+                        var fbds = document.createElement('script');
+                        fbds.async = true;
+                        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(fbds, s);
+                        _fbq.loaded = true;
+                    }
+                    _fbq.push(['addPixelId', '1663218590557628']);
+                })();
+                window._fbq = window._fbq || [];
+                window._fbq.push(['track', 'PixelInitialized', {}]);
+            noscript.
+                <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1663218590557628&amp;ev=PixelInitialized" />

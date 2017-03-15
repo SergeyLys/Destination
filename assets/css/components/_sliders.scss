@@ -223,21 +223,6 @@
 			line-height: 22px;
 			margin-bottom: 20px;
 		}
-
-		.popup-link {
-			font-size: 18px;
-			color: $dark-gray;
-			display: flex;
-			align-items: center;
-
-			svg {
-				margin-right: 13px;
-
-				path {
-					fill: $red;
-				}
-			}
-		}
 	}
 
 	.slide-content {
