@@ -30,7 +30,6 @@ export default {
             if ($(window).width() <= 767) {
                 $('.tabs-wrapper').each(function() {
                     if ($(this).find('.tab-selector').length == 0) {
-                        console.log(1);
                         var that = $(this);
                         var tabsWrap = $('<div></div>').addClass('tab-selector');
                         var activeTab = $('<span></span>').addClass('active-tab');

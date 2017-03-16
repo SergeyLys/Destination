@@ -1,3 +1,42 @@
-.footer {
+.site-footer {
+	background: $dark-gray;
+	color: $white;
+}
 
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 40px 0 0;
+
+	p {
+		margin-bottom: 40px
+	}
+
+	.contacts {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		margin-bottom: 40px;
+		flex-wrap: wrap;
+
+		li {
+			margin-right: 30px;
+		}
+
+		svg {
+			margin-right: 10px;
+
+			path {
+				fill: $red;
+			}
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			color: $white;
+		}
+	}
 }
