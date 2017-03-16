@@ -38,5 +38,14 @@ export default {
         } else {
             $('.site-header_inner').addClass('fixed');
         }
+
+        $('.has-anchor').on('click', function(e) {
+            e.preventDefault();
+            var anchor = $(this).attr('href');
+
+            $('body, html').animate({
+                'scrollTop': $(anchor).offset().top - ($('.site-header_inner').height()*3)
+            }, 500);
+        });
     }
 };
