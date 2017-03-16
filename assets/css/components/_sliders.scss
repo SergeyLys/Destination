@@ -177,14 +177,21 @@
 
 	.slide-item {
 		display: flex;
+		flex-direction: column;
+
+		@include breakpoint(large) {
+			flex-direction: row;
+		}
 	}
 
 	.slide-image {
-		width: 41.6666667%;
-		display: none;
+		width: 100%;
+		padding-top: 100%;
+		background-position: center center;
 
 		@include breakpoint(large) {
-			display: block;
+			padding-top: 0;
+			width: 41.6666667%;
 		}
 	}
 
