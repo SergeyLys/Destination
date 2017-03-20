@@ -10,6 +10,7 @@ export default {
           if ($(this).hasClass('double-slider')) {
             $(this).slick({
               slidesToShow: 2,
+              lazyLoad: 'ondemand',
               prevArrow: $(this).parent('.slider-wrapper').find('.prev-btn'),
               nextArrow: $(this).parent('.slider-wrapper').find('.next-btn'),
               responsive: [

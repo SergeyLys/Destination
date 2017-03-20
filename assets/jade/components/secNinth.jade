@@ -24,7 +24,7 @@ section.scrollspy#rates.section-ninth
           article.rate-item
             .rate-item--top
               .rate-title
-                h4 Ступень 1
+                h4 Ступень 1+2
               .rate-price
                 span 10900р
                 p 6900р
@@ -46,7 +46,7 @@ section.scrollspy#rates.section-ninth
           article.rate-item.red
             .rate-item--top
               .rate-title
-                h4 Ступень 1
+                h4 Ступень 1+2+3
               .rate-price
                 span 10900р
                 p 6900р
@@ -120,6 +120,10 @@ section.scrollspy#rates.section-ninth
           h2 Предназначение 2.0
         .form-picture
           img(src="../images/form-pic.jpg", alt="ipad")
+        ul.list
+          li - доступ в личный кабинет с 21-108 практиками и заданиями (количество практик зависит от тарифа)
+          li - 1 билет на живой тренинг в Москве (кроме 3й ступени, она проходит только онлайн)
+          li - поддержка коучей и кураторов в ходе всего обучения
       .small-12.large-5.columns
         .form-wrapper
           .form-title
@@ -133,7 +137,7 @@ section.scrollspy#rates.section-ninth
               select#rate(name="rate")
                 option(value="1") Ступень 1
                 option(value="2") Ступень 1+2
-                option(value="3") Ступень 1+2+3
+                option(value="3" selected="selected") Ступень 1+2+3
                 option(value="4") VIP
             .input-row
               label Телефон
@@ -143,10 +147,12 @@ section.scrollspy#rates.section-ninth
               input(type="text" name='bill_email' pattern="([A-Za-z0-9_\.-])+@[A-Za-z0-9-]+\.([A-Za-z]{2,4}\.)?[A-Za-z]{2,4}" required)#email
             .submit-row
               button.button Отправить заявку
-            .input-row
-              input(type="checkbox")#privacy
-              label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
-            p.description Если вы будете не довольны обучающей программой, то вам вернут все средства
+            //- .input-row
+            //-   input(type="checkbox")#privacy
+            //-   label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
+            p.description.
+              Нажимая на кнопку "Отправить заявку" вы даете согласие на обработку персональных данных и соглашаетесь с  #[a(href='#') пользовательским соглашением].
+              Если вы будете не довольны обучающей программой, вам вернут средства.
 
   .dark-bg.full-height.section-tenth
     .row.align-center
@@ -183,7 +189,7 @@ section.scrollspy#rates.section-ninth
         article.rate-item
           .rate-item--top
             .rate-title
-              h4 Ступень 1
+              h4 Ступень 1+2
             .rate-price
               span 10900р
               p 6900р
@@ -205,7 +211,7 @@ section.scrollspy#rates.section-ninth
         article.rate-item.red
           .rate-item--top
             .rate-title
-              h4 Ступень 1
+              h4 Ступень 1+2+3
             .rate-price
               span 10900р
               p 6900р
@@ -277,8 +283,15 @@ section.scrollspy#rates.section-ninth
       .form-section-title
         p.subtitle Обучающая программа
         h2 Предназначение 2.0
+        p.strong.
+          После отправки заявки Вам на почту придет 
+          #[strong ПОДАРОК] - Мастер Класс «Разбуди в себе силу»
       .form-picture
         img(src="../images/form-pic.jpg", alt="ipad")
+      ul.list
+        li - доступ в личный кабинет с 21-108 практиками и заданиями (количество практик зависит от тарифа)
+        li - 1 билет на живой тренинг в Москве (кроме 3й ступени, она проходит только онлайн)
+        li - поддержка коучей и кураторов в ходе всего обучения
     .small-12.large-5.columns
       .form-wrapper
         .form-title
@@ -292,7 +305,7 @@ section.scrollspy#rates.section-ninth
             select#rate1(name="rate")
               option(value="1") Ступень 1
               option(value="2") Ступень 1+2
-              option(value="3") Ступень 1+2+3
+              option(value="3" selected="selected") Ступень 1+2+3
               option(value="4") VIP
           .input-row
             label Телефон
@@ -302,7 +315,9 @@ section.scrollspy#rates.section-ninth
             input(type="text" name='bill_email' pattern="([A-Za-z0-9_\.-])+@[A-Za-z0-9-]+\.([A-Za-z]{2,4}\.)?[A-Za-z]{2,4}" required)#email1
           .submit-row
             button.button Отправить заявку
-          .input-row
-            input(type="checkbox")#privacy1
-            label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
-          p.description Если вы будете не довольны обучающей программой, то вам вернут все средства
+          //- .input-row
+          //-   input(type="checkbox")#privacy1
+          //-   label(for="privacy") Нажимая на кнопку "Принять участие" я даю согласие на обработку персональных данных и соглашаюсь с условиями оферты, лицензионного договора и политикой конфиденциальности
+          p.description.
+              Нажимая на кнопку "Отправить заявку" вы даете согласие на обработку персональных данных и соглашаетесь с #[a(href='#') пользовательским соглашением].
+              Если вы будете не довольны обучающей программой, вам вернут средства.

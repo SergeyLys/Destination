@@ -39,7 +39,7 @@
 
 	.top-layer {
 		padding: 25px 30px;
-		background: rgba($dark-gray, .7);
+		background: rgba($dark-gray, .9);
 
 		@include breakpoint(large) {
 			position: absolute;
@@ -129,17 +129,25 @@
 	img {
 		margin-bottom: 60px;
 		display: none;
-		
+
 		@include breakpoint(large) {
 			display: block;
 		}
+	}
+
+	.button {
+		font-size: 15px !important;
+		max-width: 193px;
+		margin-left: auto;
+		margin-right: auto;
+		border-width: 1px;
 	}
 }
 
 #mindmap {
 	background: transparent;
 	text-align: center;
-	
+
 	.reveal-wrapper {
 		background: transparent;
 	}

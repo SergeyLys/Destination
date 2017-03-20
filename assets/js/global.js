@@ -28,3 +28,7 @@ $(window).on('scroll', function() {
         $('.site-header_inner').addClass('fixed');
     }
 });
+
+$(window).on('load', function () {
+    $('.preloader').hide(100);
+})

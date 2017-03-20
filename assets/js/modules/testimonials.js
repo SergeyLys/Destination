@@ -69,8 +69,12 @@ export default {
             error: function() {
                 console.log('error');
             }
-        }).done(function() {
+        }).done(function(data) {
             revealsInit();
+
+            if ($('.testimonials-wrapper').find('.testimonial-item').length == objToArray(data).length){
+                $('.add-more').css({'display' : 'none'});
+            }
         });
 
         $('.add-more').on('click', function(e) {
@@ -89,8 +93,12 @@ export default {
                 error: function() {
                     console.log('error');
                 }
-            }).done(function() {
+            }).done(function(data) {
                 revealsInit();
+
+                if ($('.testimonials-wrapper').find('.testimonial-item').length == objToArray(data).length){
+                    $('.add-more').css({'display' : 'none'});
+                }
             });
         });
     }

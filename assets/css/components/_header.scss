@@ -3,6 +3,27 @@
   padding-top: 75px;
   background: $white;
   z-index: 2;
+
+  .site-logo {
+    @include breakpoint(xxlarge) {
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  .site-nav {
+    @include breakpoint(xxlarge) {
+      width: 100%;
+
+      ul {
+        justify-content: center;
+
+        li + li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }
 
 .site-logo {
@@ -43,6 +64,31 @@
 
   &.fixed {
     position: fixed;
+  }
+}
+
+.nav-wrapper {
+  width: 100%;
+  overflow: auto;
+  max-height: calc(100vh - 50px);
+
+  @include breakpoint(xlarge) {
+    height: 100%;
+  }
+
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+    max-height: 200px;
+  }
+
+  @media (max-width: 1024px) {
+    ul li {
+      margin: 10px 0;
+      font-size: 22px;
+    }
   }
 }
 

@@ -15,7 +15,7 @@ export default {
 
         $('form').each(function() {
             var that = $(this);
-            $(this).attr('action', actions[1]);
+            $(this).attr('action', actions[3]);
 
             $(this).find('select').on('change', function() {
                 that.attr('action', actions[$(this).val()]);
