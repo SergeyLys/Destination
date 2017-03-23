@@ -71,6 +71,33 @@
 				background: $red;
 			}
 		}
+
+		.hidden-content {
+			display: none;
+		}
+	}
+
+	.show-more {
+		cursor: pointer;
+		
+		span {
+			font-family: $font-proxima-extrabold;
+
+			&.active {
+				display: none;
+			}
+		}
+
+
+		&.active {
+			span {
+				display: none;
+
+				&.active {
+					display: block;
+				}
+			}
+		}
 	}
 }
 

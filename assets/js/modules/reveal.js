@@ -22,6 +22,11 @@ export default {
 					let src = $(this).find('iframe').attr('data-src');
 					$(this).find('iframe')[0].src = src+"&autoplay=1";
 				}
+				if ($(this).find('.lazy-images').length != 0) {
+					$(this).find('img').each(function () {
+						$(this).attr('src', $(this).attr('data-src'));
+					});
+				}
 			})
 			.on('closed.zf.reveal', function (e) {
 				$(this).removeClass('fadeInBottom');

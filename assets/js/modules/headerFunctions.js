@@ -47,5 +47,12 @@ export default {
                 'scrollTop': $(anchor).offset().top - ($('.site-header_inner').height()*3)
             }, 500);
         });
+
+        $('.coach-item').each(function () {
+            $(this).find('.show-more').on('click', function (e) {
+                $(this).toggleClass('active');
+                $(e.target).parent().parent().find('.hidden-content').slideToggle();
+            });
+        });
     }
 };

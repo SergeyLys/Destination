@@ -239,6 +239,10 @@ $reveal-overlay-background: rgba(36, 35, 47, 0.8) !default;
       right: 0;
       color: #000;
       z-index: 1;
+      background: url(../images/svg-icons/multiply.svg) no-repeat center;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
 
       &:before {
         font-size: 24px;
