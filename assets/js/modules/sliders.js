@@ -24,6 +24,13 @@ export default {
                 }
               ]
             });
+          }  else if ($(this).hasClass('testimonials-slider')) {
+              $(this).slick({
+                  lazyLoad: 'ondemand',
+                  prevArrow: $(this).parent('.slider-wrapper').find('.prev-btn'),
+                  nextArrow: $(this).parent('.slider-wrapper').find('.next-btn'),
+                  slidesToShow: 1
+              });
           } else {
             $(this).slick({
               prevArrow: $(this).parent('.slider-wrapper').find('.prev-btn'),

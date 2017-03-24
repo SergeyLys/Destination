@@ -186,12 +186,16 @@
 
 	.slide-image {
 		width: 100%;
-		padding-top: 100%;
 		background-position: center center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $white;
 
 		@include breakpoint(large) {
 			padding-top: 0;
 			width: 41.6666667%;
+			padding-left: 30px;
 		}
 	}
 

@@ -18,7 +18,9 @@ export default {
 
         function loadItems(start, stop, data) {
             for(var i = start; i < stop && i < data.length; i++) {
-                var items = `<div class="testimonial-item">
+                var item;
+                if (data[i][0].src != '') {
+                    item = `<div class="testimonial-item">
                                 <div class="testimonial-image"><img src="${data[i][0].image}" alt="pic"></div>
                                 <div class="testimonial-content">
                                     <div class="title"><h3>${data[i][0].title}</h3><span>${data[i][0].subtitle}</span></div>
@@ -32,7 +34,16 @@ export default {
                                     </div>
                                 </div>
                             </div>`
-                var $items = $(items);
+                } else {
+                    item = `<div class="testimonial-item">
+                                <div class="testimonial-image"><img src="${data[i][0].image}" alt="pic"></div>
+                                <div class="testimonial-content">
+                                    <div class="title"><h3>${data[i][0].title}</h3><span>${data[i][0].subtitle}</span></div>
+                                    <div class="description"><p>${data[i][0].text}</p></div>
+                                </div>
+                            </div>`
+                }
+                var $items = $(item);
                 var $grid = $('.testimonials-wrapper');
                 $grid.append($items);
             }
