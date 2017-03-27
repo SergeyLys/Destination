@@ -4180,6 +4180,11 @@ ul.list li:before
     margin-bottom: 30px;
 }
 
+.testimonial-item .testimonial-image img
+{
+    width: 100%;
+}
+
 .testimonial-item .testimonial-content
 {
     width: 100%;
