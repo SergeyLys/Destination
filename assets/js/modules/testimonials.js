@@ -24,7 +24,7 @@ export default {
                                 <div class="testimonial-image"><img src="${data[i][0].image}" alt="pic"></div>
                                 <div class="testimonial-content">
                                     <div class="title"><h3>${data[i][0].title}</h3><span>${data[i][0].subtitle}</span></div>
-                                    <div class="description"><p>${data[i][0].text}</p></div>
+                                    <div class="description"><blockquote>${data[i][0].quote}</blockquote><p>${data[i][0].text}</p></div>
                                     <a href="javascript:void(0)" data-open="testimonial-popup${i}" class="popup-video-btn popup-link"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><style>.cls-1 {fill: #ef2146;fill-rule: evenodd;}</style></defs><path id="ic-play" class="cls-1" d="M668,16204a14,14,0,1,1-14,14A14.021,14.021,0,0,1,668,16204Zm0,2a12,12,0,1,1-12,12A12.018,12.018,0,0,1,668,16206Zm4.994,12.5-7.983,5.5v-11Z" transform="translate(-654 -16204)"/></svg><span>Смотреть видео отзыв</span></a>
                                 </div>
                                 <div id="testimonial-popup${i}" data-reveal class="reveal">
@@ -39,7 +39,7 @@ export default {
                                 <div class="testimonial-image"><img src="${data[i][0].image}" alt="pic"></div>
                                 <div class="testimonial-content">
                                     <div class="title"><h3>${data[i][0].title}</h3><span>${data[i][0].subtitle}</span></div>
-                                    <div class="description"><p>${data[i][0].text}</p></div>
+                                    <div class="description"><blockquote>${data[i][0].quote}</blockquote><p>${data[i][0].text}</p></div>
                                 </div>
                             </div>`
                 }
