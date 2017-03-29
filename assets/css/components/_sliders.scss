@@ -196,7 +196,7 @@
 		background: $white;
 
 		@include breakpoint(large) {
-			padding-top: 0;
+			padding-top: 30px;
 			width: 41.6666667%;
 			padding-left: 30px;
 		}
