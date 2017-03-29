@@ -2992,18 +2992,12 @@ html.is-reveal-open body
 
 .testimonials-slider .slide-image
 {
-    display: -ms-flexbox;
-    display: flex;
-
     width: 100%;
+
+    text-align: center;
 
     background: #fefefe;
     background-position: center center;
-
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .testimonials-slider .slide-title
@@ -4217,7 +4211,7 @@ ul.list li:before
 
 .testimonial-item .testimonial-content .description blockquote
 {
-    font-size: 17px;
+    font-size: 21px;
     line-height: 24px;
 
     margin-bottom: 15px;
@@ -5126,7 +5120,7 @@ iframe
 
     .reveal-overlay
     {
-        background-color: rgba(10, 10, 10, .65);
+        background-color: rgba(10, 10, 10, .8);
     }
 
     .reveal

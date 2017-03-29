@@ -189,9 +189,10 @@
 	.slide-image {
 		width: 100%;
 		background-position: center center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		text-align: center;
 		background: $white;
 
 		@include breakpoint(large) {

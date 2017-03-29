@@ -193,7 +193,7 @@
 	],
 	"19": [
 		{
-			"image": "https://drive.google.com/file/d/0B5ZxsjbemQUHcUdnZ3pnbGRsNlE/view",
+			"image": "/front/dist/images/testimonials2/Кочкарев Олег.jpg",
 			"title": "Олег Кочкарёв",
 			"subtitle": "Бизнес-брокер",
 			"quote": "«Я нашел здесь энергию»",
@@ -203,7 +203,7 @@
 	],
 	"20": [
 		{
-			"image": "https://drive.google.com/file/d/0B5ZxsjbemQUHQlNKUzc1dTBDQ28/view",
+			"image": "/front/dist/images/testimonials2/Безнощенко Павел.jpg",
 			"title": "Павел Безнощенко",
 			"subtitle": "Владелец автомоечных комплексов",
 			"quote": "«Я иду той дорогой, которой хочу!»",
